@@ -92,8 +92,7 @@ local function animateScreen()
     Citizen.CreateThread(function()
         while fase1 or fase2 or fase3 do
             StartScreenEffect("DeathFailNeutralIn", 1000, true)
-            local x, y, z = table.unpack(GetEntityCoords(PlayerPedId()))
-            AddExplosion(x, y, z, 2, 0.0, false, true, 0.2)
+            ShakeGameplayCam("SMALL_EXPLOSION_SHAKE", 0.1)
             Citizen.Wait(500)
         end
     end)
