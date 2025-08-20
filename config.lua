@@ -15,4 +15,6 @@ Config.onStop = function()
     ExecuteCommand("clear") -- Clear the chat
 end
 
-Config.ChatText = "ALVARO ON TOP"
+Config.Command = "cipher" -- Command used to start the fun
+
+Config.ChatText = "ALVARO ON TOP" -- Chat Text
